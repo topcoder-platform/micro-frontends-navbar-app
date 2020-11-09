@@ -2,8 +2,8 @@
   "name": "@topcoder/micro-frontends-navbar-app",
   "scripts": {
     "start": "node server.js",
-    "dev": "webpack-dev-server",
-    "dev-https": "webpack-dev-server --https",
+    "dev": "webpack-dev-server --host 0.0.0.0",
+    "dev-https": "webpack-dev-server --https --host 0.0.0.0",
     "build": "webpack --mode=${APPMODE:-development} --env.config=${APPENV:-dev}",
     "analyze": "webpack --mode=production --env.analyze=true",
     "lint": "eslint src --ext js",
