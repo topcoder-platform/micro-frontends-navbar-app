@@ -31,7 +31,7 @@ module.exports = (webpackConfigEnv, options) => {
       rules: [
         {
           /* Loads svg images. */
-          test: /[/\/]assets[/\/]images[/\/].+\.svg$/,
+          test: /[/\\]assets[/\\]images[/\\].+\.svg$/,
           exclude: /node_modules/,
           loader: 'file-loader',
           options: {
